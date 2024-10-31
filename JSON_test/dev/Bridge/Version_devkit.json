@@ -1,1 +1,8 @@
-{"Configurations":[{"Version":"0.87.92","URL":"https://raw.githubusercontent.com/ChrGri/DIY-Sim-Racing-FFB-Pedal/develop/OTA/Bridge/dev_kit/firmware.bin"}]}
+{
+  "Configurations": [
+    {
+      "Version": "0.88.92",
+      "URL": "https://raw.githubusercontent.com/ChrGri/DIY-Sim-Racing-FFB-Pedal/develop/OTA/Bridge/dev_kit/firmware.bin"
+    }
+  ]
+}
