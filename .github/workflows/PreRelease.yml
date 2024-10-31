@@ -23,14 +23,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-        git add JSON/dev/Bridge/Version_devkit.json
-        git add JSON/dev/Bridge/Version_Fanatec_bridge.json
-        git add JSON/dev/Bridge/Version_Gilphilbert_dongle.json
-        git add JSON/dev/ControlBoard/Version_esp32.json
-        git add JSON/dev/ControlBoard/Version_esp32S3.json
-        git add JSON/dev/ControlBoard/Version_Gilphilbert_1_2.json
-        git add JSON/dev/ControlBoard/Version_Gilphilbert_2_0.json
-        git add JSON/dev/Version_Speedcrafter.json
+        git add JSON/dev/Bridge/Version_devkit.json JSON/dev/Bridge/Version_Fanatec_bridge.json JSON/dev/Bridge/Version_Gilphilbert_dongle.json JSON/dev/ControlBoard/Version_esp32.json JSON/dev/ControlBoard/Version_esp32S3.json JSON/dev/ControlBoard/Version_Gilphilbert_1_2.json JSON/dev/ControlBoard/Version_Gilphilbert_2_0.json JSON/dev/Version_Speedcrafter.json
         git commit -m "PreRelease Bump up version"
         git push
       env:
