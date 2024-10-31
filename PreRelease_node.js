@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Path to the JSON file
-const filePath = path.join(__dirname, '.\JSON_test\dev\Bridge\Version_devkit.json');
+const filePath = path.join(__dirname, 'JSON_test/dev/Bridge/Version_devkit.json');
 
 // Read the JSON file
 const data = fs.readFileSync(filePath, 'utf8');
