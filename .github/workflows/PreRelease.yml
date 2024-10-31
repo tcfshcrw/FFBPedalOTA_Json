@@ -17,7 +17,7 @@ jobs:
         node-version: '14'
 
     - name: Bump version
-      run: node PreRelease_node.js
+      run: node Release_dev_edit_node.js
 
     - name: Commit and push changes
       run: |

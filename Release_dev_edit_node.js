@@ -3,14 +3,14 @@ const path = require('path');
 
 // Array of paths to the JSON files
 const filePaths = [
-    path.join(__dirname, 'JSON/main/Bridge/Version_devkit.json'),
-    path.join(__dirname, 'JSON/main/Bridge/Version_Fanatec_bridge.json'),
-	path.join(__dirname, 'JSON/main/Bridge/Version_Gilphilbert_dongle.json'),
-	path.join(__dirname, 'JSON/main/ControlBoard/Version_esp32.json'),
-	path.join(__dirname, 'JSON/main/ControlBoard/Version_esp32S3.json'),
-	path.join(__dirname, 'JSON/main/ControlBoard/Version_Gilphilbert_1_2.json'),
-	path.join(__dirname, 'JSON/main/ControlBoard/Version_Gilphilbert_2_0.json'),
-	path.join(__dirname, 'JSON/main/ControlBoard/Version_Speedcrafter.json')
+    path.join(__dirname, 'JSON/dev/Bridge/Version_devkit.json'),
+    path.join(__dirname, 'JSON/dev/Bridge/Version_Fanatec_bridge.json'),
+	path.join(__dirname, 'JSON/dev/Bridge/Version_Gilphilbert_dongle.json'),
+	path.join(__dirname, 'JSON/dev/ControlBoard/Version_esp32.json'),
+	path.join(__dirname, 'JSON/dev/ControlBoard/Version_esp32S3.json'),
+	path.join(__dirname, 'JSON/dev/ControlBoard/Version_Gilphilbert_1_2.json'),
+	path.join(__dirname, 'JSON/dev/ControlBoard/Version_Gilphilbert_2_0.json'),
+	path.join(__dirname, 'JSON/dev/ControlBoard/Version_Speedcrafter.json')
 ];
 
 // Function to bump the version
@@ -29,7 +29,7 @@ const bumpVersion = (filePath) => {
 
     // Update the second part of the version string
     versionParts[1] = secondNumber.toString();
-
+	versionParts[2] = 0;
     // Join the parts back into a version string
     const newVersionString = versionParts.join('.');
 
@@ -41,7 +41,6 @@ const bumpVersion = (filePath) => {
 
     console.log(`Version in ${filePath} bumped to ${newVersionString}`);
 };
-
 
 // Process each file
 filePaths.forEach(bumpVersion);
