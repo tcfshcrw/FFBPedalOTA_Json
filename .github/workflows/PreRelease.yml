@@ -21,8 +21,8 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --global user.name 'tcfshcrw'
-        git config --global user.email 'crw010284@gmail.com'
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
         git add JSON_test/dev/Bridge/Version_devkit.json
         git commit -m "PreRelease Bump version"
         git push
