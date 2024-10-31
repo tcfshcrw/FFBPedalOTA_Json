@@ -1,7 +1,7 @@
 {
   "Configurations": [
     {
-      "Version": "2.0.0",
+      "Version": "0.87.1",
       "URL": "https://raw.githubusercontent.com/ChrGri/DIY-Sim-Racing-FFB-Pedal/develop/OTA/ControlBoard/Speedcrafter/firmware.bin"      
     }
   ]
