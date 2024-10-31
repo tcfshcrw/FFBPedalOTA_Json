@@ -33,29 +33,30 @@ fs.writeFileSync(filePath, JSON.stringify(json, null, 2));
 console.log(`Version bumped to ${newVersionString}`);
 
 ////JSON/dev/Bridge/Version_Fanatec_bridge.json
-
+const fs = require('fs');
+const path = require('path');
 
 // Path to the JSON file
-filePath = path.join(__dirname, 'JSON/dev/Bridge/Version_Fanatec_bridge.json');
+const filePath = path.join(__dirname, 'JSON/dev/Bridge/Version_Fanatec_bridge.json');
 
 // Read the JSON file
-data = fs.readFileSync(filePath, 'utf8');
-json = JSON.parse(data);
+const data = fs.readFileSync(filePath, 'utf8');
+const json = JSON.parse(data);
 
 // Extract the version string
-versionString = json.Configurations[0].Version;
+const versionString = json.Configurations[0].Version;
 
 // Split the version string into parts
-versionParts = versionString.split('.');
+const versionParts = versionString.split('.');
 
 // Convert the second part to an integer and increment it
-secondNumber = parseInt(versionParts[2], 10) + 1;
+const secondNumber = parseInt(versionParts[2], 10) + 1;
 
 // Update the second part of the version string
 versionParts[2] = secondNumber.toString();
 
 // Join the parts back into a version string
-newVersionString = versionParts.join('.');
+const newVersionString = versionParts.join('.');
 
 // Update the JSON object
 json.Configurations[0].Version = newVersionString;
@@ -66,29 +67,30 @@ fs.writeFileSync(filePath, JSON.stringify(json, null, 2));
 console.log(`Version bumped to ${newVersionString}`);
 
 ////JSON/dev/Bridge/Version_Gilphilbert_dongle.json
-
+const fs = require('fs');
+const path = require('path');
 
 // Path to the JSON file
-filePath = path.join(__dirname, 'JSON/dev/Bridge/Version_Gilphilbert_dongle.json');
+const filePath = path.join(__dirname, 'JSON/dev/Bridge/Version_Gilphilbert_dongle.json');
 
 // Read the JSON file
-data = fs.readFileSync(filePath, 'utf8');
-json = JSON.parse(data);
+const data = fs.readFileSync(filePath, 'utf8');
+const json = JSON.parse(data);
 
 // Extract the version string
-versionString = json.Configurations[0].Version;
+const versionString = json.Configurations[0].Version;
 
 // Split the version string into parts
-versionParts = versionString.split('.');
+const versionParts = versionString.split('.');
 
 // Convert the second part to an integer and increment it
-secondNumber = parseInt(versionParts[2], 10) + 1;
+const secondNumber = parseInt(versionParts[2], 10) + 1;
 
 // Update the second part of the version string
 versionParts[2] = secondNumber.toString();
 
 // Join the parts back into a version string
-newVersionString = versionParts.join('.');
+const newVersionString = versionParts.join('.');
 
 // Update the JSON object
 json.Configurations[0].Version = newVersionString;
@@ -99,29 +101,30 @@ fs.writeFileSync(filePath, JSON.stringify(json, null, 2));
 console.log(`Version bumped to ${newVersionString}`);
 
 ////JSON/dev/ControlBoard/Version_esp32.json
-
+const fs = require('fs');
+const path = require('path');
 
 // Path to the JSON file
-filePath = path.join(__dirname, 'JSON/dev/ControlBoard/Version_esp32.json');
+const filePath = path.join(__dirname, 'JSON/dev/ControlBoard/Version_esp32.json');
 
 // Read the JSON file
-data = fs.readFileSync(filePath, 'utf8');
-json = JSON.parse(data);
+const data = fs.readFileSync(filePath, 'utf8');
+const json = JSON.parse(data);
 
 // Extract the version string
-versionString = json.Configurations[0].Version;
+const versionString = json.Configurations[0].Version;
 
 // Split the version string into parts
-versionParts = versionString.split('.');
+const versionParts = versionString.split('.');
 
 // Convert the second part to an integer and increment it
-secondNumber = parseInt(versionParts[2], 10) + 1;
+const secondNumber = parseInt(versionParts[2], 10) + 1;
 
 // Update the second part of the version string
 versionParts[2] = secondNumber.toString();
 
 // Join the parts back into a version string
-newVersionString = versionParts.join('.');
+const newVersionString = versionParts.join('.');
 
 // Update the JSON object
 json.Configurations[0].Version = newVersionString;
@@ -132,29 +135,30 @@ fs.writeFileSync(filePath, JSON.stringify(json, null, 2));
 console.log(`Version bumped to ${newVersionString}`);
 
 ////JSON/dev/ControlBoard/Version_esp32S3.json
-
+const fs = require('fs');
+const path = require('path');
 
 // Path to the JSON file
-filePath = path.join(__dirname, 'JSON/dev/ControlBoard/Version_esp32S3.json');
+const filePath = path.join(__dirname, 'JSON/dev/ControlBoard/Version_esp32S3.json');
 
 // Read the JSON file
-data = fs.readFileSync(filePath, 'utf8');
-json = JSON.parse(data);
+const data = fs.readFileSync(filePath, 'utf8');
+const json = JSON.parse(data);
 
 // Extract the version string
-versionString = json.Configurations[0].Version;
+const versionString = json.Configurations[0].Version;
 
 // Split the version string into parts
-versionParts = versionString.split('.');
+const versionParts = versionString.split('.');
 
 // Convert the second part to an integer and increment it
-secondNumber = parseInt(versionParts[2], 10) + 1;
+const secondNumber = parseInt(versionParts[2], 10) + 1;
 
 // Update the second part of the version string
 versionParts[2] = secondNumber.toString();
 
 // Join the parts back into a version string
-newVersionString = versionParts.join('.');
+const newVersionString = versionParts.join('.');
 
 // Update the JSON object
 json.Configurations[0].Version = newVersionString;
@@ -165,29 +169,30 @@ fs.writeFileSync(filePath, JSON.stringify(json, null, 2));
 console.log(`Version bumped to ${newVersionString}`);
 
 ////JSON/dev/ControlBoard/Version_Gilphilbert_1_2.json
-
+const fs = require('fs');
+const path = require('path');
 
 // Path to the JSON file
-filePath = path.join(__dirname, 'JSON/dev/ControlBoard/Version_Gilphilbert_1_2.json');
+const filePath = path.join(__dirname, 'JSON/dev/ControlBoard/Version_Gilphilbert_1_2.json');
 
 // Read the JSON file
-data = fs.readFileSync(filePath, 'utf8');
-json = JSON.parse(data);
+const data = fs.readFileSync(filePath, 'utf8');
+const json = JSON.parse(data);
 
 // Extract the version string
-versionString = json.Configurations[0].Version;
+const versionString = json.Configurations[0].Version;
 
 // Split the version string into parts
-versionParts = versionString.split('.');
+const versionParts = versionString.split('.');
 
 // Convert the second part to an integer and increment it
-secondNumber = parseInt(versionParts[2], 10) + 1;
+const secondNumber = parseInt(versionParts[2], 10) + 1;
 
 // Update the second part of the version string
 versionParts[2] = secondNumber.toString();
 
 // Join the parts back into a version string
-newVersionString = versionParts.join('.');
+const newVersionString = versionParts.join('.');
 
 // Update the JSON object
 json.Configurations[0].Version = newVersionString;
@@ -198,29 +203,30 @@ fs.writeFileSync(filePath, JSON.stringify(json, null, 2));
 console.log(`Version bumped to ${newVersionString}`);
 
 ////JSON/dev/ControlBoard/Version_Gilphilbert_2_0.json
-
+const fs = require('fs');
+const path = require('path');
 
 // Path to the JSON file
-filePath = path.join(__dirname, 'JSON/dev/ControlBoard/Version_Gilphilbert_2_0.json');
+const filePath = path.join(__dirname, 'JSON/dev/ControlBoard/Version_Gilphilbert_2_0.json');
 
 // Read the JSON file
-data = fs.readFileSync(filePath, 'utf8');
-json = JSON.parse(data);
+const data = fs.readFileSync(filePath, 'utf8');
+const json = JSON.parse(data);
 
 // Extract the version string
-versionString = json.Configurations[0].Version;
+const versionString = json.Configurations[0].Version;
 
 // Split the version string into parts
-versionParts = versionString.split('.');
+const versionParts = versionString.split('.');
 
 // Convert the second part to an integer and increment it
-secondNumber = parseInt(versionParts[2], 10) + 1;
+const secondNumber = parseInt(versionParts[2], 10) + 1;
 
 // Update the second part of the version string
 versionParts[2] = secondNumber.toString();
 
 // Join the parts back into a version string
-newVersionString = versionParts.join('.');
+const newVersionString = versionParts.join('.');
 
 // Update the JSON object
 json.Configurations[0].Version = newVersionString;
@@ -231,28 +237,30 @@ fs.writeFileSync(filePath, JSON.stringify(json, null, 2));
 console.log(`Version bumped to ${newVersionString}`);
 
 ////JSON/dev/ControlBoard/Version_Speedcrafter.json
+const fs = require('fs');
+const path = require('path');
 
 // Path to the JSON file
-filePath = path.join(__dirname, 'JSON/dev/ControlBoard/Version_Speedcrafter.json');
+const filePath = path.join(__dirname, 'JSON/dev/ControlBoard/Version_Speedcrafter.json');
 
 // Read the JSON file
-data = fs.readFileSync(filePath, 'utf8');
-json = JSON.parse(data);
+const data = fs.readFileSync(filePath, 'utf8');
+const json = JSON.parse(data);
 
 // Extract the version string
-versionString = json.Configurations[0].Version;
+const versionString = json.Configurations[0].Version;
 
 // Split the version string into parts
-versionParts = versionString.split('.');
+const versionParts = versionString.split('.');
 
 // Convert the second part to an integer and increment it
-secondNumber = parseInt(versionParts[2], 10) + 1;
+const secondNumber = parseInt(versionParts[2], 10) + 1;
 
 // Update the second part of the version string
 versionParts[2] = secondNumber.toString();
 
 // Join the parts back into a version string
-newVersionString = versionParts.join('.');
+const newVersionString = versionParts.join('.');
 
 // Update the JSON object
 json.Configurations[0].Version = newVersionString;
