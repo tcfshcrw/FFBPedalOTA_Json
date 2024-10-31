@@ -1,0 +1,30 @@
+name: Release Bump Version
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bump_version:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Bump version
+      run: node Release_node.js
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+        git add JSON/main/Bridge/Version_devkit.json JSON/main/Bridge/Version_Fanatec_bridge.json JSON/main/Bridge/Version_Gilphilbert_dongle.json JSON/main/ControlBoard/Version_esp32.json JSON/main/ControlBoard/Version_esp32S3.json JSON/main/ControlBoard/Version_Gilphilbert_1_2.json JSON/main/ControlBoard/Version_Gilphilbert_2_0.json JSON/main/ControlBoard/Version_Speedcrafter.json
+        git commit -m "PreRelease Bump up version"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
