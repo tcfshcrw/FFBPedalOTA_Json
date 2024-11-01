@@ -1,0 +1,19 @@
+{
+  "Configurations": [
+    {
+      "Board": "DevKit",
+      "Version": "0.87.2",
+      "URL": "https://raw.githubusercontent.com/ChrGri/DIY-Sim-Racing-FFB-Pedal/main/OTA/Bridge/dev_kit/firmware.bin"
+    },
+    {
+      "Board": "Bridge_FANATEC",
+      "Version": "0.87.2",
+      "URL": "https://raw.githubusercontent.com/ChrGri/DIY-Sim-Racing-FFB-Pedal/main/OTA/Bridge/Fanatec_Bridge/firmware.bin"
+    },
+    {
+      "Board": "Gilphilbert_Dongle",
+      "Version": "0.87.2",
+      "URL": "https://raw.githubusercontent.com/ChrGri/DIY-Sim-Racing-FFB-Pedal/main/OTA/Bridge/Gilphilbert_dongle/firmware.bin"
+    }
+  ]
+}
